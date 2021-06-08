@@ -2,6 +2,7 @@ import React, { SyntheticEvent, useEffect, useState } from 'react'
 import axios from 'axios'
 import { Role } from '../../models/role'
 import { useHistory, useParams } from 'react-router-dom'
+
 interface RouteParams {
   id: string
 }
