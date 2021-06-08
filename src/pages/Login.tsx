@@ -56,10 +56,11 @@ const Login = () => {
           <div className="form-floating">
             <input
               type="password"
-              className={`form-control ${errors.password ? 'is-invalid' : ''}`}
+              className={`form-control  ${errors.password ? 'is-invalid' : ''}`}
               {...register('password')}
               placeholder="Password"
             />
+
             <div className={`${errors.password && 'alert alert-danger'}`}>
               {errors.password?.message}
             </div>
