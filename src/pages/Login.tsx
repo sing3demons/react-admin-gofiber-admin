@@ -16,7 +16,7 @@ const schema = yup.object().shape({
   password: yup.string().required('รหัสผ่านห้ามว่าง').min(3, 'รหัสผ่านต้อง 3 ตัวอักษรขึ้นไป'),
 })
 
-function Login() {
+const Login = () => {
   const history = useHistory()
   const {
     register,
@@ -25,9 +25,10 @@ function Login() {
   } = useForm<FormValues>({ resolver: yupResolver(schema) })
 
   const onSubmit = handleSubmit(async ({ email, password }) => {
-    await axios.post('auth/login', { email, password })
+    await axios.post('/auth/login', { email, password })
 
     history.push('/')
+    history.go(0)
   })
 
   return (

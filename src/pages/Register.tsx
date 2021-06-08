@@ -17,7 +17,7 @@ function Register() {
 
   const onSubmit = handleSubmit(
     async ({ first_name, last_name, email, password, password_confirm }) => {
-      const { data } = await axios.post('auth/register', {
+      const { data } = await axios.post('/auth/register', {
         first_name,
         last_name,
         email,
