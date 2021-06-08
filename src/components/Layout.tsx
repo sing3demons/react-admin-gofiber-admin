@@ -5,7 +5,7 @@ import Wrapper from './Wrapper'
 function Layout() {
   return (
     <>
-      <Nav />
+    
       <Wrapper />
     </>
   )

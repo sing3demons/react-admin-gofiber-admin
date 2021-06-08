@@ -8,7 +8,7 @@ const Nav = () => {
   const [user, setUser] = useState(new User())
   const fetchData = async () => {
     const { data } = await axios.get('/auth/user', { withCredentials: true })
-    setUser(new User(data.id, data.first_name, data.last_name, data.email))
+    setUser(new User(data.id, data.first_name, data.last_name, data.email, data.role))
   }
 
   const logout = async () => {
