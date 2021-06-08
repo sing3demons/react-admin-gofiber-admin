@@ -1,4 +1,4 @@
-import { Role } from "./role";
+import { Role } from './role'
 
 export class User {
   constructor(
@@ -6,10 +6,11 @@ export class User {
     public first_name: string = '',
     public last_name: string = '',
     public email: string = '',
-    public role = new Role()
+    public role_id: number = 0,
+    public role = new Role(),
   ) {}
 
-  public get name(){
-      return this.first_name+ " " + this.last_name
+  public get name() {
+    return this.first_name + ' ' + this.last_name
   }
 }

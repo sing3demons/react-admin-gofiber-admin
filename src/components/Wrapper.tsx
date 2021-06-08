@@ -1,10 +1,8 @@
 import Menu from './Menu'
 import Routes from './Routes'
-import Nav from './Nav'
 function Wrapper(props: any) {
   return (
     <>
-      <Nav />
       <div className="container-fluid">
         <div className="row">
           <Menu />
