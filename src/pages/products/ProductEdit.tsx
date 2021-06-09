@@ -27,7 +27,7 @@ const ProductEdit = () => {
       setPrice(data.price)
     }
     fetchData()
-  }, [])
+  }, [id])
 
   const submit = async (e: SyntheticEvent) => {
     e.preventDefault()

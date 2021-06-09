@@ -2,9 +2,11 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Dashboard from '../pages/Dashboard'
 import Login from '../pages/Login'
+import Orders from '../pages/orders/Orders'
 import ProductCreate from '../pages/products/ProductCreate'
 import ProductEdit from '../pages/products/ProductEdit'
 import Products from '../pages/products/Products'
+import Profile from '../pages/Profile'
 import Register from '../pages/Register'
 import RoleCreate from '../pages/roles/RoleCreate'
 import RoleEdit from '../pages/roles/RoleEdit'
@@ -19,9 +21,11 @@ function Routes() {
       <Route path="/" exact component={Dashboard} />
       <Route path={'/register'} component={Register} />
       <Route path={'/login'} component={Login} />
+      <Route path={'/orders'} component={Orders} />
       <Route path={'/roles/:id/edit'} component={RoleEdit} />
       <Route path={'/roles/create'} component={RoleCreate} />
       <Route path={'/roles'} component={Roles} />
+      <Route path={'/profile'} component={Profile} />
       <Route path={'/products/edit/:id'} component={ProductEdit} />
       <Route path={'/products/create'} component={ProductCreate} />
       <Route path={'/products'} component={Products} />

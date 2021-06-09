@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Paginator from '../../components/Paginator'
 import { Product } from '../../models/product'
+import currencyFormat from '../../utils/currencyFormat'
 
 function Products() {
   const [products, setProducts] = useState([])
@@ -62,7 +63,7 @@ function Products() {
                   </td>
                   <td>{p.title}</td>
                   <td>{p.description}</td>
-                  <td>{p.price}</td>
+                  <td>{currencyFormat(p.price)}</td>
                   <td>
                     <div className="btn-group mr-2">
                       <Link
