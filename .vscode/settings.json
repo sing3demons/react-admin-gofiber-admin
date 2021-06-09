@@ -19,5 +19,20 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "cSpell.words": [
     "ปแบบอ"
+  ],
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "go_fiber_admin",
+      "database": "go_fiber_admin",
+      "username": "go_fiber_admin",
+      "password": "go_fiber_admin"
+    }
   ]
 }

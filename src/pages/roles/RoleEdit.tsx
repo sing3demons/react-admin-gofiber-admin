@@ -25,7 +25,7 @@ function RoleEdit() {
       setName(data.name)
       setSelected(data.permission.map((p: Permission) => p.id))
     })()
-  }, [])
+  }, [id])
 
   const submit = async (e: SyntheticEvent) => {
     e.preventDefault()
